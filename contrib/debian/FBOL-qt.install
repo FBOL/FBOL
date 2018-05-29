@@ -1,0 +1,5 @@
+FBOL-qt usr/bin
+share/pixmaps/FBOL32.xpm usr/share/pixmaps
+share/pixmaps/FBOL80.xpm usr/share/pixmaps
+debian/FBOL-qt.desktop usr/share/applications
+debian/FBOL-qt.protocol usr/share/kde4/services/

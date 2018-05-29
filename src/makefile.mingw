@@ -94,7 +94,7 @@ OBJS= \
     obj/cryptogram.o \
     obj/ipcollector.o
 
-all: SABRd.exe
+all: FBOLd.exe
 
 #
 # LevelDB support
@@ -150,11 +150,11 @@ endif
 obj/%.o: %.cpp $(HEADERS)
 	g++ -c $(CFLAGS) -o $@ $<
 
-SABRd.exe: $(OBJS:obj/%=obj/%)
+FBOLd.exe: $(OBJS:obj/%=obj/%)
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
-	-del /Q SABRd.exe
+	-del /Q FBOLd.exe
 	-del /Q obj\*
 	-del /Q crypto\scrypt\asm\obj\*
 

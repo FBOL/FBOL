@@ -1,25 +1,25 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-DEB_INSTALL_EXAMPLES_SABRd += debian/examples/*
-DEB_INSTALL_MANPAGES_SABRd += debian/manpages/*
+DEB_INSTALL_EXAMPLES_FBOLd += debian/examples/*
+DEB_INSTALL_MANPAGES_FBOLd += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix SABRd USE_ASM=1 USE_LEVELDB=1
+	cd src; $(MAKE) -f makefile.unix FBOLd USE_ASM=1 USE_LEVELDB=1
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f SABR-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f FBOL-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake SABR-qt.pro USE_ASM=1 USE_LEVELDB=1
+	qmake FBOL-qt.pro USE_ASM=1 USE_LEVELDB=1
 
 # Ensure wrapper is set executable
-binary-post-install/SABRd:
-	chmod +x $(cdbs_curdestdir)usr/bin/SABRd
-binary-post-install/SABR-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/SABR-qt
+binary-post-install/FBOLd:
+	chmod +x $(cdbs_curdestdir)usr/bin/FBOLd
+binary-post-install/FBOL-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/FBOL-qt

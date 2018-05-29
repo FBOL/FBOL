@@ -1,9 +1,9 @@
 Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=174
-Upstream-Name: SABR
-Upstream-Source: https://github.com/SABR-1331/SABR
+Upstream-Name: FBOL
+Upstream-Source: https://github.com/FBOL/FBOL
 
 Files: *
-Copyright: 2018, SABR Developers
+Copyright: 2018, FBOL Developers
 License: Expat
 
 Files: *

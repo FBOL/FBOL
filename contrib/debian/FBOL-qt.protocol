@@ -1,6 +1,6 @@
 [Protocol]
-exec=SABR-qt '%u'
-protocol=SABR
+exec=FBOL-qt '%u'
+protocol=FBOL
 input=none
 output=none
 helper=true

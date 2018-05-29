@@ -4,7 +4,7 @@ MaxProcessSum = 200000   # Maximum amount of coins to merge
 MaxOutputSum = 500       # Maximum transaction value
 MinInputSum = 50         # Minimum input value, inputs with lower size will be ignored
 
-access = ServiceProxy("http://alexd:123456789@127.0.0.1:1331")   # http://username:password@host:port/
+access = ServiceProxy("http://alexd:123456789@127.0.0.1:9562")   # http://username:password@host:port/
 
 try:
     balance = access.getbalance()

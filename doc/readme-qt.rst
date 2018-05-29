@@ -1,4 +1,4 @@
-SABR-qt: Qt4 GUI for SABR
+FBOL-qt: Qt4 GUI for FBOL
 ===============================
 
 Build instructions
@@ -35,9 +35,9 @@ then execute the following:
     qmake
     make
 
-Alternatively, install Qt Creator and open the `SABR-qt.pro` file.
+Alternatively, install Qt Creator and open the `FBOL-qt.pro` file.
 
-An executable named `SABR-qt` will be built.
+An executable named `FBOL-qt` will be built.
 
 
 Windows
@@ -137,9 +137,9 @@ It can be downloaded from http://fukuchi.org/works/qrencode/index.html.en, or in
 Berkely DB version warning
 ==========================
 
-A warning for people using the *static binary* version of SABR on a Linux/UNIX-ish system (tl;dr: **Berkely DB databases are not forward compatible**).
+A warning for people using the *static binary* version of FBOL on a Linux/UNIX-ish system (tl;dr: **Berkely DB databases are not forward compatible**).
 
-The static binary version of SABR is linked against libdb5.3.
+The static binary version of FBOL is linked against libdb5.3.
 
 If the globally installed development package of Berkely DB installed on your system is 5.X, for example, any source you
 build yourself will be linked against that. The first time you run with a 5.X version the database will be upgraded,
@@ -150,7 +150,7 @@ Ubuntu 11.10 warning
 ====================
 
 Ubuntu 11.10 has a package called 'qt-at-spi' installed by default.  At the time of writing, having that package
-installed causes SABR-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
+installed causes FBOL-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
 isn't yet fixed.
 
 Until the bug is fixed, you can remove the qt-at-spi package to work around the problem, though this will presumably

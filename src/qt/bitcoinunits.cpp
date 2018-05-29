@@ -36,9 +36,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("SABR");
-    case mBTC: return QString("mSABR");
-    case uBTC: return QString::fromUtf8("μSABR");
+    case BTC: return QString("FBOL");
+    case mBTC: return QString("mFBOL");
+    case uBTC: return QString::fromUtf8("μFBOL");
     case Dents: return QString("Dents");
     default: return QString("???");
     }
@@ -48,9 +48,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("SABR");
-    case mBTC: return QString("Milli-SABR (1 / 1,000)");
-    case uBTC: return QString("Micro-SABR (1 / 1,000,000)");
+    case BTC: return QString("FBOL");
+    case mBTC: return QString("Milli-FBOL (1 / 1,000)");
+    case uBTC: return QString("Micro-FBOL (1 / 1,000,000)");
     case Dents: return QString("Dents (1 / 100,000,000)");
     default: return QString("???");
     }

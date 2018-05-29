@@ -43,7 +43,7 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 
-static const int64_t MAX_MONEY = 133100000 * COIN;
+static const int64_t MAX_MONEY = 1000000000 * COIN;
 static const int64_t COIN_YEAR_REWARD = 0 * COIN; // 0% per year
 static const int64_t MIN_TXOUT_AMOUNT = CENT/1000;
 
@@ -54,8 +54,8 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 // Maximum number of script-checking threads allowed
 static const int MAX_SCRIPTCHECK_THREADS = 16;
 
-static const uint256 hashGenesisBlock("0x00000925b682218e7984e0d2718f02e75e42e12e8fd4285442eeebc7507da7d0");
-static const uint256 hashGenesisBlockTestNet("0x0000e8b458f418d0ea10298ebbfbe4570c3e4db8c8d8dc436a7386ced00a959f");
+static const uint256 hashGenesisBlock("0x0000030056741d54172b90abf52711e1283fb18d06f723979094cdaa5ad13ad7");
+static const uint256 hashGenesisBlockTestNet("0x00005750c06a88dda6ccbcfaa7c58474c30f671761d27285ef0d32ede7af7d56");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 2 * nOneHour; } // up to 2 hours from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 2 * nOneHour; } // up to 2 hours from the future

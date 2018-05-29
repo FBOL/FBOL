@@ -6,13 +6,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About SABR</source>
-        <translation>Про SABR</translation>
+        <source>About FBOL</source>
+        <translation>Про FBOL</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="56"/>
-        <source>&lt;b&gt;SABR&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;SABR&lt;/b&gt; версії</translation>
+        <source>&lt;b&gt;FBOL&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;FBOL&lt;/b&gt; версії</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="97"/>
@@ -22,14 +22,14 @@ Copyright © 2014 The Peerunity Developers
 Copyright © 2014 The EmerCoin Developers
 Copyright © 2012-2016 The NovaCoin Developers
 Copyright © 2016-2017 The 42 Developers
-Copyright © 2018 The SABR Developers</source>
+Copyright © 2018 The FBOL Developers</source>
         <translation>© 2009-2016 Розробники Bitcoin
 © 2011-2012 Розробники PPCoin
 © 2014 Розробники Peerunity
 © 2014 Розробники EmerCoin
 © 2012-2016 Розробники NovaCoin
 © 2016-2017 Розробники 42
-© 2016-2017 Розробники SABR</translation>
+© 2016-2017 Розробники FBOL</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="114"/>
@@ -46,7 +46,7 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your SABR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your FBOL addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Це ваші адреси для отримання платежів. Ви можете давати різні адреси різним людям, таким чином маючи можливість відслідкувати хто конкретно і скільки вам заплатив.</translation>
     </message>
     <message>
@@ -81,7 +81,7 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="102"/>
-        <source>Sign a message to prove you own a SABR address</source>
+        <source>Sign a message to prove you own a FBOL address</source>
         <translation>Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -91,8 +91,8 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="116"/>
-        <source>Verify a message to ensure it was signed with a specified SABR address</source>
-        <translation>Перевірити повідомлення, щоб переконатися, що воно було підписане вказаним адресою SABR</translation>
+        <source>Verify a message to ensure it was signed with a specified FBOL address</source>
+        <translation>Перевірити повідомлення, щоб переконатися, що воно було підписане вказаним адресою FBOL</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="119"/>
@@ -244,7 +244,7 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="116"/>
-        <source>SABR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>FBOL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Новакоін-клієнт буде закрито для завершення процесу шифрування. Пам’ятайте, що шифрування гаманця не може повністю захистити ваші новакоіни від кражі, у випадку якщо ваш комп’ютер буде інфіковано шкідливими програмами.</translation>
     </message>
     <message>
@@ -297,8 +297,8 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="178"/>
-        <source>SABR will close now to finish the decryption process. </source>
-        <translation>Зараз SABR клієнт буде закрито щоб завершити процес розшифровки.</translation>
+        <source>FBOL will close now to finish the decryption process. </source>
+        <translation>Зараз FBOL клієнт буде закрито щоб завершити процес розшифровки.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="189"/>
@@ -316,14 +316,14 @@ Copyright © 2018 The SABR Developers</source>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoin.cpp" line="146"/>
-        <source>A fatal error occurred. SABR can no longer continue safely and will quit.</source>
-        <translation>Сталася фатальна помилка. Програма зараз закриється, оскільки SABR не може продовжувати роботу безпечно.</translation>
+        <source>A fatal error occurred. FBOL can no longer continue safely and will quit.</source>
+        <translation>Сталася фатальна помилка. Програма зараз закриється, оскільки FBOL не може продовжувати роботу безпечно.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="96"/>
         <location filename="../bitcoingui.cpp" line="736"/>
-        <source>SABR</source>
-        <translation>SABR</translation>
+        <source>FBOL</source>
+        <translation>FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="96"/>
@@ -347,7 +347,7 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="251"/>
-        <source>Send coins to a SABR address</source>
+        <source>Send coins to a FBOL address</source>
         <translation>Відправити монети на вказану адресу</translation>
     </message>
     <message>
@@ -412,13 +412,13 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="303"/>
-        <source>&amp;About SABR</source>
-        <translation>П&amp;ро SABR</translation>
+        <source>&amp;About FBOL</source>
+        <translation>П&amp;ро FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="304"/>
-        <source>Show information about SABR</source>
-        <translation>Показати інформацію про SABR</translation>
+        <source>Show information about FBOL</source>
+        <translation>Показати інформацію про FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="307"/>
@@ -438,8 +438,8 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="314"/>
-        <source>Modify configuration options for SABR</source>
-        <translation>Редагувати параметри SABR</translation>
+        <source>Modify configuration options for FBOL</source>
+        <translation>Редагувати параметри FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="316"/>
@@ -503,8 +503,8 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="329"/>
-        <source>Sign messages with your SABR addresses to prove you own them</source>
-        <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою SABR-адресою</translation>
+        <source>Sign messages with your FBOL addresses to prove you own them</source>
+        <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою FBOL-адресою</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="330"/>
@@ -513,8 +513,8 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="331"/>
-        <source>Verify messages to ensure they were signed with specified SABR addresses</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною SABR-адресою</translation>
+        <source>Verify messages to ensure they were signed with specified FBOL addresses</source>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною FBOL-адресою</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="332"/>
@@ -523,7 +523,7 @@ Copyright © 2018 The SABR Developers</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="333"/>
-        <source>Second auth with your SABR addresses</source>
+        <source>Second auth with your FBOL addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -615,16 +615,16 @@ Copyright © 2018 The SABR Developers</source>
     <message>
         <location filename="../bitcoingui.cpp" line="445"/>
         <location filename="../bitcoingui.cpp" line="513"/>
-        <source>SABR client</source>
-        <translation>SABR клієнт</translation>
+        <source>FBOL client</source>
+        <translation>FBOL клієнт</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="586"/>
-        <source>%n active connection(s) to SABR network</source>
+        <source>%n active connection(s) to FBOL network</source>
         <translation>
-            <numerusform>%n активне з&apos;єднання з мережею SABR</numerusform>
-            <numerusform>%n активних з&apos;єднань з мережею SABR</numerusform>
-            <numerusform>%n активних з&apos;єднань з мережею SABR</numerusform>
+            <numerusform>%n активне з&apos;єднання з мережею FBOL</numerusform>
+            <numerusform>%n активних з&apos;єднань з мережею FBOL</numerusform>
+            <numerusform>%n активних з&apos;єднань з мережею FBOL</numerusform>
         </translation>
     </message>
     <message>
@@ -798,8 +798,8 @@ Address: %4
     <message>
         <location filename="../bitcoingui.cpp" line="982"/>
         <location filename="../bitcoingui.cpp" line="997"/>
-        <source>URI can not be parsed! This can be caused by an invalid SABR address or malformed URI parameters.</source>
-        <translation>Неможливо обробити URI! Це може бути викликано неправильною SABR-адресою, чи невірними параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FBOL address or malformed URI parameters.</source>
+        <translation>Неможливо обробити URI! Це може бути викликано неправильною FBOL-адресою, чи невірними параметрами URI.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="1016"/>
@@ -937,8 +937,8 @@ Some or all keys from:
         <translation>Сума:</translation>
     </message>
     <message>
-        <source>0.000 SABR</source>
-        <translation type="obsolete">0.000 SABR</translation>
+        <source>0.000 FBOL</source>
+        <translation type="obsolete">0.000 FBOL</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="157"/>
@@ -1241,8 +1241,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="103"/>
-        <source>The entered address &quot;%1&quot; is not a valid SABR address.</source>
-        <translation>Введена адреса «%1» не є коректною адресою в мережі SABR</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FBOL address.</source>
+        <translation>Введена адреса «%1» не є коректною адресою в мережі FBOL</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="108"/>
@@ -1293,8 +1293,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="476"/>
         <location filename="../guiutil.cpp" line="488"/>
-        <source>SABR-Qt</source>
-        <translation>SABR-Qt</translation>
+        <source>FBOL-Qt</source>
+        <translation>FBOL-Qt</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="476"/>
@@ -1341,17 +1341,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../forms/intro.ui" line="23"/>
-        <source>Welcome to SABR-qt.</source>
+        <source>Welcome to FBOL-qt.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="49"/>
-        <source>As this is the first time the program is launched, you can choose where SABR-qt will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where FBOL-qt will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="59"/>
-        <source>SABR-qt will download and store a copy of the SABR block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>FBOL-qt will download and store a copy of the FBOL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1366,7 +1366,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../intro.cpp" line="184"/>
-        <source>SABR-qt</source>
+        <source>FBOL-qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1793,8 +1793,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="obsolete">123.456</translation>
     </message>
     <message>
-        <source>SABR</source>
-        <translation type="obsolete">SABR</translation>
+        <source>FBOL</source>
+        <translation type="obsolete">FBOL</translation>
     </message>
     <message>
         <location filename="../forms/multisigdialog.ui" line="413"/>
@@ -1903,13 +1903,13 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../multisigdialog.cpp" line="522"/>
-        <source>The fee of the transaction (%1 SABR) is smaller than the expected fee (%2 SABR). Do you want to send the transaction anyway?</source>
-        <translation>Комісія за транзакцію (%1 SABR) менше, ніж очікувана комісія (%2 SABR). Чи бажаєте ви здійснити транзакцію в будь-якому випадку?</translation>
+        <source>The fee of the transaction (%1 FBOL) is smaller than the expected fee (%2 FBOL). Do you want to send the transaction anyway?</source>
+        <translation>Комісія за транзакцію (%1 FBOL) менше, ніж очікувана комісія (%2 FBOL). Чи бажаєте ви здійснити транзакцію в будь-якому випадку?</translation>
     </message>
     <message>
         <location filename="../multisigdialog.cpp" line="528"/>
-        <source>The fee of the transaction (%1 SABR) is bigger than the expected fee (%2 SABR). Do you want to send the transaction anyway?</source>
-        <translation>Комісія за транзакцію (%1 SABR) більша, ніж очікувана комісія (%2 SABR). Чи бажаєте ви здійснити транзакцію в будь-якому випадку?</translation>
+        <source>The fee of the transaction (%1 FBOL) is bigger than the expected fee (%2 FBOL). Do you want to send the transaction anyway?</source>
+        <translation>Комісія за транзакцію (%1 FBOL) більша, ніж очікувана комісія (%2 FBOL). Чи бажаєте ви здійснити транзакцію в будь-якому випадку?</translation>
     </message>
 </context>
 <context>
@@ -1984,12 +1984,12 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="86"/>
-        <source>Automatically start SABR after logging in to the system.</source>
+        <source>Automatically start FBOL after logging in to the system.</source>
         <translation>Автоматично запускати гаманець при вході до системи.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="89"/>
-        <source>&amp;Start SABR on system login</source>
+        <source>&amp;Start FBOL on system login</source>
         <translation>&amp;Запускати гаманець при вході в систему</translation>
     </message>
     <message>
@@ -2009,7 +2009,7 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="126"/>
-        <source>Connect to the SABR network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the FBOL network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Підключення до мережі через SOCKS5 проксі (напр. при підключенні через Tor).</translation>
     </message>
     <message>
@@ -2119,8 +2119,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="425"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting SABR.</source>
-        <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску SABR.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FBOL.</source>
+        <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску FBOL.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="436"/>
@@ -2134,8 +2134,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="458"/>
-        <source>Whether to show SABR addresses in the transaction list or not.</source>
-        <translation>Відображати адреси SABR у списку транзакцій чи ні.</translation>
+        <source>Whether to show FBOL addresses in the transaction list or not.</source>
+        <translation>Відображати адреси FBOL у списку транзакцій чи ні.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="461"/>
@@ -2196,8 +2196,8 @@ Reduce the number of addresses involved in the address creation.</source>
         <location filename="../optionsdialog.cpp" line="251"/>
         <location filename="../optionsdialog.cpp" line="260"/>
         <location filename="../optionsdialog.cpp" line="269"/>
-        <source>This setting will take effect after restarting SABR.</source>
-        <translation>Цей параметр набуде чинності після перезавантаження SABR.</translation>
+        <source>This setting will take effect after restarting FBOL.</source>
+        <translation>Цей параметр набуде чинності після перезавантаження FBOL.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="299"/>
@@ -2230,8 +2230,8 @@ Reduce the number of addresses involved in the address creation.</source>
     <message>
         <location filename="../forms/overviewpage.ui" line="46"/>
         <location filename="../forms/overviewpage.ui" line="365"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SABR network after a connection is established, but this process has not completed yet.</source>
-        <translation>Інформація, що відображається може бути застарілою. Ваш гаманець автоматично синхронізується з мережею SABR після встановлення з&apos;єднання, але цей процес ще не завершений.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FBOL network after a connection is established, but this process has not completed yet.</source>
+        <translation>Інформація, що відображається може бути застарілою. Ваш гаманець автоматично синхронізується з мережею FBOL після встановлення з&apos;єднання, але цей процес ще не завершений.</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="225"/>
@@ -2331,18 +2331,18 @@ Reduce the number of addresses involved in the address creation.</source>
     <name>QObject</name>
     <message>
         <location filename="../bitcoinunits.cpp" line="48"/>
-        <source>SABRs</source>
-        <translation>SABRs</translation>
+        <source>FBOLs</source>
+        <translation>FBOLs</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="49"/>
-        <source>Milli-SABRs (1 / 1,000)</source>
-        <translation>Milli-SABRs (1 / 1,000)</translation>
+        <source>Milli-FBOLs (1 / 1,000)</source>
+        <translation>Milli-FBOLs (1 / 1,000)</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="50"/>
-        <source>Micro-SABRs (1 / 1,000,000)</source>
-        <translation>Micro-SABRs (1 / 1,000,000)</translation>
+        <source>Micro-FBOLs (1 / 1,000,000)</source>
+        <translation>Micro-FBOLs (1 / 1,000,000)</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="185"/>
@@ -2442,8 +2442,8 @@ Reduce the number of addresses involved in the address creation.</source>
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>SABR - Debug window</source>
-        <translation>SABR - Вікно відладки</translation>
+        <source>FBOL - Debug window</source>
+        <translation>FBOL - Вікно відладки</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="24"/>
@@ -2482,8 +2482,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="95"/>
-        <source>Open the SABR debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Відкрийте файл журналу відладки SABR з поточного каталогу даних. Це може зайняти кілька секунд для великих файлів журналів.</translation>
+        <source>Open the FBOL debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Відкрийте файл журналу відладки FBOL з поточного каталогу даних. Це може зайняти кілька секунд для великих файлів журналів.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="98"/>
@@ -2497,8 +2497,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="147"/>
-        <source>Show the SABR-Qt help message to get a list with possible SABR command-line options.</source>
-        <translation>Показати довідку SABR-Qt для отримання переліку можливих параметрів командного рядка.</translation>
+        <source>Show the FBOL-Qt help message to get a list with possible FBOL command-line options.</source>
+        <translation>Показати довідку FBOL-Qt для отримання переліку можливих параметрів командного рядка.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="150"/>
@@ -2562,8 +2562,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="383"/>
-        <source>SABR Core</source>
-        <translation>Ядро SABR</translation>
+        <source>FBOL Core</source>
+        <translation>Ядро FBOL</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="406"/>
@@ -2572,8 +2572,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="426"/>
-        <source>Open the SABR configuration file from the current data directory.</source>
-        <translation>Відкрийте файл конфігурації SABR з поточного каталогу даних.</translation>
+        <source>Open the FBOL configuration file from the current data directory.</source>
+        <translation>Відкрийте файл конфігурації FBOL з поточного каталогу даних.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="429"/>
@@ -2617,8 +2617,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="325"/>
-        <source>Welcome to the SABR RPC console.</source>
-        <translation>Вітаємо у консолі SABR RPC.</translation>
+        <source>Welcome to the FBOL RPC console.</source>
+        <translation>Вітаємо у консолі FBOL RPC.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="326"/>
@@ -2722,7 +2722,7 @@ Reduce the number of addresses involved in the address creation.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SABR address</source>
+        <source>Sign the message to prove you own this FBOL address</source>
         <translation type="obsolete">Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -2742,8 +2742,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../secondauthdialog.cpp" line="29"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation type="unfinished">Введіть адресу SABR (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation type="unfinished">Введіть адресу FBOL (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
     <message>
         <location filename="../secondauthdialog.cpp" line="30"/>
@@ -2846,8 +2846,8 @@ Reduce the number of addresses involved in the address creation.</source>
         <translation>Сума:</translation>
     </message>
     <message>
-        <source>0.000 SABR</source>
-        <translation type="obsolete">0.000 SABR</translation>
+        <source>0.000 FBOL</source>
+        <translation type="obsolete">0.000 FBOL</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="337"/>
@@ -2935,8 +2935,8 @@ Reduce the number of addresses involved in the address creation.</source>
         <translation>Баланс:</translation>
     </message>
     <message>
-        <source>123.456 SABR</source>
-        <translation type="obsolete">123.456 SABR</translation>
+        <source>123.456 FBOL</source>
+        <translation type="obsolete">123.456 FBOL</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="772"/>
@@ -2950,8 +2950,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="43"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation>Введіть адресу SABR (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation>Введіть адресу FBOL (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="57"/>
@@ -3110,8 +3110,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="26"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation>Введіть адресу SABR (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation>Введіть адресу FBOL (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
 </context>
 <context>
@@ -3171,7 +3171,7 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="148"/>
-        <source>Sign the message to prove you own this SABR address</source>
+        <source>Sign the message to prove you own this FBOL address</source>
         <translation>Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -3203,8 +3203,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="294"/>
-        <source>Verify the message to ensure it was signed with the specified SABR address</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною SABR-адресою</translation>
+        <source>Verify the message to ensure it was signed with the specified FBOL address</source>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною FBOL-адресою</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="311"/>
@@ -3214,8 +3214,8 @@ Reduce the number of addresses involved in the address creation.</source>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="29"/>
         <location filename="../signverifymessagedialog.cpp" line="32"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation>Введіть адресу SABR (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation>Введіть адресу FBOL (наприклад 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="30"/>
@@ -3224,8 +3224,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="33"/>
-        <source>Enter SABR signature</source>
-        <translation>Введіть підпис SABR</translation>
+        <source>Enter FBOL signature</source>
+        <translation>Введіть підпис FBOL</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="115"/>
@@ -3458,8 +3458,8 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
         <location filename="../transactiondesc.cpp" line="253"/>
-        <source>Generated coins must mature SABR blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Після генерації монет, потрібно зачекати SABR блока, перш ніж їх можна буде використати. Коли ви згенерували цей блок, його було відправлено в мережу для того, щоб він був доданий до ланцюжка блоків. Якщо ця процедура не вдасться, статус буде змінено на «не підтверджено» і ви не зможете витратити згенеровані монети. Таке може статись, якщо хтось інший згенерував блок на декілька секунд раніше.</translation>
+        <source>Generated coins must mature FBOL blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Після генерації монет, потрібно зачекати FBOL блока, перш ніж їх можна буде використати. Коли ви згенерували цей блок, його було відправлено в мережу для того, щоб він був доданий до ланцюжка блоків. Якщо ця процедура не вдасться, статус буде змінено на «не підтверджено» і ви не зможете витратити згенеровані монети. Таке може статись, якщо хтось інший згенерував блок на декілька секунд раніше.</translation>
     </message>
     <message>
         <location filename="../transactiondesc.cpp" line="260"/>
@@ -3815,7 +3815,7 @@ Reduce the number of addresses involved in the address creation.</source>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=SABRrpc
+rpcuser=FBOLrpc
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
@@ -3823,7 +3823,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>%s, ви повинні встановити rpcpassword в файлі конфігурації:
 %s
 Рекомендується використати такий випадковий пароль:
-rpcuser=SABRrpc
+rpcuser=FBOLrpc
 rpcpassword=%s
 (ви не повинні пам&apos;ятати цей пароль)
 Ім’я користувача та пароль ПОВИННІ бути різними.
@@ -3848,8 +3848,8 @@ rpcpassword=%s
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="26"/>
-        <source>Cannot obtain a lock on data directory %s.  SABR is probably already running.</source>
-        <translation>Не вдалося встановити блокування на каталог даних %s. SABR, ймовірно, вже запущений.</translation>
+        <source>Cannot obtain a lock on data directory %s.  FBOL is probably already running.</source>
+        <translation>Не вдалося встановити блокування на каталог даних %s. FBOL, ймовірно, вже запущений.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="29"/>
@@ -3883,8 +3883,8 @@ rpcpassword=%s
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="46"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 2121 or testnet: 21210)</source>
-        <translation>Прослуховувати &lt;port&gt; для JSON-RPC з&apos;єднань (типово: 2121, для тестової мережі: 21210)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9562 or testnet: 95620)</source>
+        <translation>Прослуховувати &lt;port&gt; для JSON-RPC з&apos;єднань (типово: 9562, для тестової мережі: 95620)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="48"/>
@@ -3898,8 +3898,8 @@ rpcpassword=%s
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="54"/>
-        <source>Unable to bind to %s on this computer. SABR is probably already running.</source>
-        <translation>Неможливо прив&apos;язатися до %s на цьому комп&apos;ютері. Можливо, SABR вже запущено.</translation>
+        <source>Unable to bind to %s on this computer. FBOL is probably already running.</source>
+        <translation>Неможливо прив&apos;язатися до %s на цьому комп&apos;ютері. Можливо, FBOL вже запущено.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="56"/>
@@ -3908,8 +3908,8 @@ rpcpassword=%s
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="59"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong SABR will not work properly.</source>
-        <translation>Увага: будь ласка, перевірте дату і час на своєму комп&amp;apos;ютері. Якщо ваш годинник йде неправильно, SABR може працювати некоректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FBOL will not work properly.</source>
+        <translation>Увага: будь ласка, перевірте дату і час на своєму комп&amp;apos;ютері. Якщо ваш годинник йде неправильно, FBOL може працювати некоректно.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="62"/>
@@ -4039,8 +4039,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="95"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of SABR</source>
-        <translation>Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії SABR</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FBOL</source>
+        <translation>Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="96"/>
@@ -4151,8 +4151,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="117"/>
-        <source>Listen for connections on &lt;port&gt; (default: 1331 or testnet: 13310)</source>
-        <translation>Чекати на з&apos;єднання на &lt;port&gt; (типово: 1331, для тестової мережі: 13310)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 2121 or testnet: 21210)</source>
+        <translation>Чекати на з&apos;єднання на &lt;port&gt; (типово: 2121, для тестової мережі: 21210)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="118"/>
@@ -4186,13 +4186,13 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
-        <source>SABR version</source>
-        <translation>SABR версії</translation>
+        <source>FBOL version</source>
+        <translation>FBOL версії</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="125"/>
-        <source>SABR</source>
-        <translation>SABR</translation>
+        <source>FBOL</source>
+        <translation>FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="126"/>
@@ -4255,7 +4255,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Send command to -server or SABRd</source>
+        <source>Send command to -server or FBOLd</source>
         <translation>Відправити команду серверу -server чи демону
 </translation>
     </message>
@@ -4325,8 +4325,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="150"/>
-        <source>Specify configuration file (default: SABR.conf)</source>
-        <translation>Вкажіть файл конфігурації (за промовчуванням: SABR.conf)
+        <source>Specify configuration file (default: FBOL.conf)</source>
+        <translation>Вкажіть файл конфігурації (за промовчуванням: FBOL.conf)
 </translation>
     </message>
     <message>
@@ -4342,8 +4342,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="153"/>
-        <source>Specify pid file (default: SABRd.pid)</source>
-        <translation>Вкажіть pid-файл (за промовчуванням: SABRd.pid)
+        <source>Specify pid file (default: FBOLd.pid)</source>
+        <translation>Вкажіть pid-файл (за промовчуванням: FBOLd.pid)
 </translation>
     </message>
     <message>
@@ -4429,8 +4429,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="169"/>
-        <source>Wallet needed to be rewritten: restart SABR to complete</source>
-        <translation>Потрібно перезаписати гаманець: перезапустіть SABR для завершення</translation>
+        <source>Wallet needed to be rewritten: restart FBOL to complete</source>
+        <translation>Потрібно перезаписати гаманець: перезапустіть FBOL для завершення</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="170"/>

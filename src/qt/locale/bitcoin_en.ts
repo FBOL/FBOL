@@ -6,13 +6,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About SABR</source>
-        <translation>About SABR</translation>
+        <source>About FBOL</source>
+        <translation>About FBOL</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="56"/>
-        <source>&lt;b&gt;SABR&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;SABR&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;FBOL&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;FBOL&lt;/b&gt; version</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="97"/>
@@ -22,14 +22,14 @@ Copyright © 2014 The Peerunity Developers
 Copyright © 2014 The EmerCoin Developers
 Copyright © 2012-2016 The NovaCoin developers
 Copyright © 2016-2017 The 42 developers
-Copyright © 2018 The SABR developers</source>
+Copyright © 2018 The FBOL developers</source>
         <translation>Copyright © 2009-2016 The Bitcoin developers
 Copyright © 2011-2012 The PPCoin Developers
 Copyright © 2014 The Peerunity Developers
 Copyright © 2014 The EmerCoin Developers
 Copyright © 2012-2016 The NovaCoin developers
 Copyright © 2016-2017 The 42 developers
-Copyright © 2018 The SABR developers</translation>
+Copyright © 2018 The FBOL developers</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="114"/>
@@ -50,8 +50,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your SABR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your SABR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your FBOL addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your FBOL addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="36"/>
@@ -85,8 +85,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="102"/>
-        <source>Sign a message to prove you own a SABR address</source>
-        <translation>Sign a message to prove you own a SABR address</translation>
+        <source>Sign a message to prove you own a FBOL address</source>
+        <translation>Sign a message to prove you own a FBOL address</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="105"/>
@@ -95,8 +95,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="116"/>
-        <source>Verify a message to ensure it was signed with a specified SABR address</source>
-        <translation>Verify a message to ensure it was signed with a specified SABR address</translation>
+        <source>Verify a message to ensure it was signed with a specified FBOL address</source>
+        <translation>Verify a message to ensure it was signed with a specified FBOL address</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="119"/>
@@ -247,8 +247,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="116"/>
-        <source>SABR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>SABR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
+        <source>FBOL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>FBOL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="120"/>
@@ -300,8 +300,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="178"/>
-        <source>SABR will close now to finish the decryption process. </source>
-        <translation>SABR will close now to finish the decryption process. </translation>
+        <source>FBOL will close now to finish the decryption process. </source>
+        <translation>FBOL will close now to finish the decryption process. </translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="189"/>
@@ -319,14 +319,14 @@ Copyright © 2018 The SABR developers</translation>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoin.cpp" line="146"/>
-        <source>A fatal error occurred. SABR can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. SABR can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. FBOL can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. FBOL can no longer continue safely and will quit.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="96"/>
         <location filename="../bitcoingui.cpp" line="736"/>
-        <source>SABR</source>
-        <translation>SABR</translation>
+        <source>FBOL</source>
+        <translation>FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="96"/>
@@ -350,8 +350,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="251"/>
-        <source>Send coins to a SABR address</source>
-        <translation>Send coins to a SABR address</translation>
+        <source>Send coins to a FBOL address</source>
+        <translation>Send coins to a FBOL address</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
@@ -415,13 +415,13 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="303"/>
-        <source>&amp;About SABR</source>
-        <translation>&amp;About SABR</translation>
+        <source>&amp;About FBOL</source>
+        <translation>&amp;About FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="304"/>
-        <source>Show information about SABR</source>
-        <translation>Show information about SABR</translation>
+        <source>Show information about FBOL</source>
+        <translation>Show information about FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="307"/>
@@ -441,8 +441,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="314"/>
-        <source>Modify configuration options for SABR</source>
-        <translation>Modify configuration options for SABR</translation>
+        <source>Modify configuration options for FBOL</source>
+        <translation>Modify configuration options for FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="316"/>
@@ -506,8 +506,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="329"/>
-        <source>Sign messages with your SABR addresses to prove you own them</source>
-        <translation>Sign messages with your SABR addresses to prove you own them</translation>
+        <source>Sign messages with your FBOL addresses to prove you own them</source>
+        <translation>Sign messages with your FBOL addresses to prove you own them</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="330"/>
@@ -516,8 +516,8 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="331"/>
-        <source>Verify messages to ensure they were signed with specified SABR addresses</source>
-        <translation>Verify messages to ensure they were signed with specified SABR addresses</translation>
+        <source>Verify messages to ensure they were signed with specified FBOL addresses</source>
+        <translation>Verify messages to ensure they were signed with specified FBOL addresses</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="332"/>
@@ -526,7 +526,7 @@ Copyright © 2018 The SABR developers</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="333"/>
-        <source>Second auth with your SABR addresses</source>
+        <source>Second auth with your FBOL addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -618,15 +618,15 @@ Copyright © 2018 The SABR developers</translation>
     <message>
         <location filename="../bitcoingui.cpp" line="445"/>
         <location filename="../bitcoingui.cpp" line="513"/>
-        <source>SABR client</source>
-        <translation>SABR client</translation>
+        <source>FBOL client</source>
+        <translation>FBOL client</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="586"/>
-        <source>%n active connection(s) to SABR network</source>
+        <source>%n active connection(s) to FBOL network</source>
         <translation>
-            <numerusform>%n active connection to SABR network</numerusform>
-            <numerusform>%n active connections to SABR network</numerusform>
+            <numerusform>%n active connection to FBOL network</numerusform>
+            <numerusform>%n active connections to FBOL network</numerusform>
         </translation>
     </message>
     <message>
@@ -795,8 +795,8 @@ Address: %4
     <message>
         <location filename="../bitcoingui.cpp" line="982"/>
         <location filename="../bitcoingui.cpp" line="997"/>
-        <source>URI can not be parsed! This can be caused by an invalid SABR address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid SABR address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FBOL address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid FBOL address or malformed URI parameters.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="1016"/>
@@ -934,8 +934,8 @@ Some or all keys from:
         <translation>Amount:</translation>
     </message>
     <message>
-        <source>0.000 SABR</source>
-        <translation type="obsolete">0.000 SABR</translation>
+        <source>0.000 FBOL</source>
+        <translation type="obsolete">0.000 FBOL</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="157"/>
@@ -1238,8 +1238,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="103"/>
-        <source>The entered address &quot;%1&quot; is not a valid SABR address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid SABR address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FBOL address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid FBOL address.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="108"/>
@@ -1290,8 +1290,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="476"/>
         <location filename="../guiutil.cpp" line="488"/>
-        <source>SABR-Qt</source>
-        <translation>SABR-Qt</translation>
+        <source>FBOL-Qt</source>
+        <translation>FBOL-Qt</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="476"/>
@@ -1338,17 +1338,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../forms/intro.ui" line="23"/>
-        <source>Welcome to SABR-qt.</source>
+        <source>Welcome to FBOL-qt.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="49"/>
-        <source>As this is the first time the program is launched, you can choose where SABR-qt will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where FBOL-qt will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="59"/>
-        <source>SABR-qt will download and store a copy of the SABR block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>FBOL-qt will download and store a copy of the FBOL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1363,7 +1363,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../intro.cpp" line="184"/>
-        <source>SABR-qt</source>
+        <source>FBOL-qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1788,8 +1788,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="obsolete">123.456</translation>
     </message>
     <message>
-        <source>SABR</source>
-        <translation type="obsolete">SABR</translation>
+        <source>FBOL</source>
+        <translation type="obsolete">FBOL</translation>
     </message>
     <message>
         <location filename="../forms/multisigdialog.ui" line="413"/>
@@ -1898,13 +1898,13 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../multisigdialog.cpp" line="522"/>
-        <source>The fee of the transaction (%1 SABR) is smaller than the expected fee (%2 SABR). Do you want to send the transaction anyway?</source>
-        <translation>The fee of the transaction (%1 SABR) is smaller than the expected fee (%2 SABR). Do you want to send the transaction anyway?</translation>
+        <source>The fee of the transaction (%1 FBOL) is smaller than the expected fee (%2 FBOL). Do you want to send the transaction anyway?</source>
+        <translation>The fee of the transaction (%1 FBOL) is smaller than the expected fee (%2 FBOL). Do you want to send the transaction anyway?</translation>
     </message>
     <message>
         <location filename="../multisigdialog.cpp" line="528"/>
-        <source>The fee of the transaction (%1 SABR) is bigger than the expected fee (%2 SABR). Do you want to send the transaction anyway?</source>
-        <translation>The fee of the transaction (%1 SABR) is bigger than the expected fee (%2 SABR). Do you want to send the transaction anyway?</translation>
+        <source>The fee of the transaction (%1 FBOL) is bigger than the expected fee (%2 FBOL). Do you want to send the transaction anyway?</source>
+        <translation>The fee of the transaction (%1 FBOL) is bigger than the expected fee (%2 FBOL). Do you want to send the transaction anyway?</translation>
     </message>
 </context>
 <context>
@@ -1979,13 +1979,13 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="86"/>
-        <source>Automatically start SABR after logging in to the system.</source>
-        <translation>Automatically start SABR after logging in to the system.</translation>
+        <source>Automatically start FBOL after logging in to the system.</source>
+        <translation>Automatically start FBOL after logging in to the system.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="89"/>
-        <source>&amp;Start SABR on system login</source>
-        <translation>&amp;Start SABR on system login</translation>
+        <source>&amp;Start FBOL on system login</source>
+        <translation>&amp;Start FBOL on system login</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="96"/>
@@ -2004,8 +2004,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="126"/>
-        <source>Connect to the SABR network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the SABR network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the FBOL network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the FBOL network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="129"/>
@@ -2114,8 +2114,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="425"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting SABR.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting SABR.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FBOL.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting FBOL.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="436"/>
@@ -2129,8 +2129,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="458"/>
-        <source>Whether to show SABR addresses in the transaction list or not.</source>
-        <translation>Whether to show SABR addresses in the transaction list or not.</translation>
+        <source>Whether to show FBOL addresses in the transaction list or not.</source>
+        <translation>Whether to show FBOL addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="461"/>
@@ -2191,8 +2191,8 @@ Reduce the number of addresses involved in the address creation.</translation>
         <location filename="../optionsdialog.cpp" line="251"/>
         <location filename="../optionsdialog.cpp" line="260"/>
         <location filename="../optionsdialog.cpp" line="269"/>
-        <source>This setting will take effect after restarting SABR.</source>
-        <translation>This setting will take effect after restarting SABR.</translation>
+        <source>This setting will take effect after restarting FBOL.</source>
+        <translation>This setting will take effect after restarting FBOL.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="299"/>
@@ -2225,8 +2225,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     <message>
         <location filename="../forms/overviewpage.ui" line="46"/>
         <location filename="../forms/overviewpage.ui" line="365"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SABR network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the SABR network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FBOL network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the FBOL network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="225"/>
@@ -2326,18 +2326,18 @@ Reduce the number of addresses involved in the address creation.</translation>
     <name>QObject</name>
     <message>
         <location filename="../bitcoinunits.cpp" line="48"/>
-        <source>SABRs</source>
-        <translation>SABRs</translation>
+        <source>FBOLs</source>
+        <translation>FBOLs</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="49"/>
-        <source>Milli-SABRs (1 / 1,000)</source>
-        <translation>Milli-SABRs (1 / 1,000)</translation>
+        <source>Milli-FBOLs (1 / 1,000)</source>
+        <translation>Milli-FBOLs (1 / 1,000)</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="50"/>
-        <source>Micro-SABRs (1 / 1,000,000)</source>
-        <translation>Micro-SABRs (1 / 1,000,000)</translation>
+        <source>Micro-FBOLs (1 / 1,000,000)</source>
+        <translation>Micro-FBOLs (1 / 1,000,000)</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="185"/>
@@ -2437,8 +2437,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>SABR - Debug window</source>
-        <translation>SABR - Debug window</translation>
+        <source>FBOL - Debug window</source>
+        <translation>FBOL - Debug window</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="24"/>
@@ -2477,8 +2477,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="95"/>
-        <source>Open the SABR debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the SABR debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the FBOL debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the FBOL debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="98"/>
@@ -2492,8 +2492,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="147"/>
-        <source>Show the SABR-Qt help message to get a list with possible SABR command-line options.</source>
-        <translation>Show the SABR-Qt help message to get a list with possible SABR command-line options.</translation>
+        <source>Show the FBOL-Qt help message to get a list with possible FBOL command-line options.</source>
+        <translation>Show the FBOL-Qt help message to get a list with possible FBOL command-line options.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="150"/>
@@ -2557,8 +2557,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="383"/>
-        <source>SABR Core</source>
-        <translation>SABR Core</translation>
+        <source>FBOL Core</source>
+        <translation>FBOL Core</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="406"/>
@@ -2567,8 +2567,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="426"/>
-        <source>Open the SABR configuration file from the current data directory.</source>
-        <translation>Open the SABR configuration file from the current data directory.</translation>
+        <source>Open the FBOL configuration file from the current data directory.</source>
+        <translation>Open the FBOL configuration file from the current data directory.</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="429"/>
@@ -2612,8 +2612,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="325"/>
-        <source>Welcome to the SABR RPC console.</source>
-        <translation>Welcome to the SABR RPC console.</translation>
+        <source>Welcome to the FBOL RPC console.</source>
+        <translation>Welcome to the FBOL RPC console.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="326"/>
@@ -2721,8 +2721,8 @@ Reduce the number of addresses involved in the address creation.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SABR address</source>
-        <translation type="obsolete">Sign the message to prove you own this SABR address</translation>
+        <source>Sign the message to prove you own this FBOL address</source>
+        <translation type="obsolete">Sign the message to prove you own this FBOL address</translation>
     </message>
     <message>
         <location filename="../forms/secondauthdialog.ui" line="145"/>
@@ -2741,8 +2741,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../secondauthdialog.cpp" line="29"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation type="unfinished">Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation type="unfinished">Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
     <message>
         <location filename="../secondauthdialog.cpp" line="30"/>
@@ -2845,8 +2845,8 @@ Reduce the number of addresses involved in the address creation.</translation>
         <translation>Amount:</translation>
     </message>
     <message>
-        <source>0.000 SABR</source>
-        <translation type="obsolete">0.000 SABR</translation>
+        <source>0.000 FBOL</source>
+        <translation type="obsolete">0.000 FBOL</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="337"/>
@@ -2934,8 +2934,8 @@ Reduce the number of addresses involved in the address creation.</translation>
         <translation>Balance:</translation>
     </message>
     <message>
-        <source>123.456 SABR</source>
-        <translation type="obsolete">123.456 SABR</translation>
+        <source>123.456 FBOL</source>
+        <translation type="obsolete">123.456 FBOL</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="772"/>
@@ -2949,8 +2949,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="43"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="57"/>
@@ -3109,8 +3109,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="26"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
 </context>
 <context>
@@ -3170,8 +3170,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="148"/>
-        <source>Sign the message to prove you own this SABR address</source>
-        <translation>Sign the message to prove you own this SABR address</translation>
+        <source>Sign the message to prove you own this FBOL address</source>
+        <translation>Sign the message to prove you own this FBOL address</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="165"/>
@@ -3202,8 +3202,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="294"/>
-        <source>Verify the message to ensure it was signed with the specified SABR address</source>
-        <translation>Verify the message to ensure it was signed with the specified SABR address</translation>
+        <source>Verify the message to ensure it was signed with the specified FBOL address</source>
+        <translation>Verify the message to ensure it was signed with the specified FBOL address</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="311"/>
@@ -3213,8 +3213,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="29"/>
         <location filename="../signverifymessagedialog.cpp" line="32"/>
-        <source>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
-        <translation>Enter a SABR address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
+        <source>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</source>
+        <translation>Enter a FBOL address (e.g. 4VsEs7wqRpoiTpmqViWRtse1P3CNgvBw4g)</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="30"/>
@@ -3223,8 +3223,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="33"/>
-        <source>Enter SABR signature</source>
-        <translation>Enter SABR signature</translation>
+        <source>Enter FBOL signature</source>
+        <translation>Enter FBOL signature</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="115"/>
@@ -3454,8 +3454,8 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../transactiondesc.cpp" line="253"/>
-        <source>Generated coins must mature SABR blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Generated coins must mature SABR blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</translation>
+        <source>Generated coins must mature FBOL blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Generated coins must mature FBOL blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</translation>
     </message>
     <message>
         <location filename="../transactiondesc.cpp" line="260"/>
@@ -3809,7 +3809,7 @@ Reduce the number of addresses involved in the address creation.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=SABRrpc
+rpcuser=FBOLrpc
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
@@ -3817,7 +3817,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=SABRrpc
+rpcuser=FBOLrpc
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.</translation>
@@ -3839,8 +3839,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="26"/>
-        <source>Cannot obtain a lock on data directory %s.  SABR is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s.  SABR is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s.  FBOL is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s.  FBOL is probably already running.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="29"/>
@@ -3874,8 +3874,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="46"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 2662 or testnet: 26620)</source>
-        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: 2662 or testnet: 26620)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9562 or testnet: 95620)</source>
+        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: 9562 or testnet: 95620)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="48"/>
@@ -3889,8 +3889,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="54"/>
-        <source>Unable to bind to %s on this computer. SABR is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. SABR is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. FBOL is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. FBOL is probably already running.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="56"/>
@@ -3899,8 +3899,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="59"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong SABR will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong SABR will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FBOL will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FBOL will not work properly.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="62"/>
@@ -4028,8 +4028,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="95"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of SABR</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of SABR</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FBOL</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="96"/>
@@ -4138,8 +4138,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="117"/>
-        <source>Listen for connections on &lt;port&gt; (default: 1331 or testnet: 13310)</source>
-        <translation>Listen for connections on &lt;port&gt; (default: 1331 or testnet: 13310)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 2121 or testnet: 21210)</source>
+        <translation>Listen for connections on &lt;port&gt; (default: 2121 or testnet: 21210)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="118"/>
@@ -4173,13 +4173,13 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
-        <source>SABR version</source>
-        <translation>SABR version</translation>
+        <source>FBOL version</source>
+        <translation>FBOL version</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="125"/>
-        <source>SABR</source>
-        <translation>SABR</translation>
+        <source>FBOL</source>
+        <translation>FBOL</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="126"/>
@@ -4238,8 +4238,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Send command to -server or SABRd</source>
-        <translation>Send command to -server or SABRd</translation>
+        <source>Send command to -server or FBOLd</source>
+        <translation>Send command to -server or FBOLd</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="138"/>
@@ -4303,8 +4303,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="150"/>
-        <source>Specify configuration file (default: SABR.conf)</source>
-        <translation>Specify configuration file (default: SABR.conf)</translation>
+        <source>Specify configuration file (default: FBOL.conf)</source>
+        <translation>Specify configuration file (default: FBOL.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="151"/>
@@ -4318,8 +4318,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="153"/>
-        <source>Specify pid file (default: SABRd.pid)</source>
-        <translation>Specify pid file (default: SABRd.pid)</translation>
+        <source>Specify pid file (default: FBOLd.pid)</source>
+        <translation>Specify pid file (default: FBOLd.pid)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="154"/>
@@ -4400,8 +4400,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="169"/>
-        <source>Wallet needed to be rewritten: restart SABR to complete</source>
-        <translation>Wallet needed to be rewritten: restart SABR to complete</translation>
+        <source>Wallet needed to be rewritten: restart FBOL to complete</source>
+        <translation>Wallet needed to be rewritten: restart FBOL to complete</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="170"/>

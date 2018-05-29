@@ -6,8 +6,8 @@ inherit db-use eutils fdo-mime gnome2-utils kde4-functions qt4-r2
 
 DB_VER="4.8"
 
-DESCRIPTION="SABR - a hybrid PoW+PoS energy efficient p2p-cryptocurrency and electronic payment system."
-SRC_URI="https://github.com/${PN}-coin/${PN}/archive/SABR-v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
+DESCRIPTION="FBOL - a hybrid PoW+PoS energy efficient p2p-cryptocurrency and electronic payment system."
+SRC_URI="https://github.com/${PN}-coin/${PN}/archive/FBOL-v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -36,7 +36,7 @@ DEPEND="${RDEPEND}
 
 DOCS="doc/translation_process.md"
 
-S="${WORKDIR}/${PN}-SABR-v${PV}"
+S="${WORKDIR}/${PN}-FBOL-v${PV}"
 
 src_prepare() {
 	cd src || die
@@ -81,13 +81,13 @@ src_install() {
 	dobin ${PN}-qt
 
 	insinto /usr/share/pixmaps
-	newins "src/qt/res/icons/SABR-128.png" "${PN}.png"
+	newins "src/qt/res/icons/FBOL-128.png" "${PN}.png"
 
-	make_desktop_entry "${PN}-qt" "SABR" "/usr/share/pixmaps/${PN}.png" "Network;P2P;Finance;"
+	make_desktop_entry "${PN}-qt" "FBOL" "/usr/share/pixmaps/${PN}.png" "Network;P2P;Finance;"
 
 	if use kde; then
 		insinto /usr/share/kde4/services
-		newins contrib/debian/SABR-qt.protocol ${PN}.protocol
+		newins contrib/debian/FBOL-qt.protocol ${PN}.protocol
 	fi
 }
 

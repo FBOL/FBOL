@@ -1,5 +1,5 @@
 src/*.exe
-src/sabrd
+src/FBOLd
 src/build.h
 .*.swp
 *.*~*
@@ -8,11 +8,11 @@ src/build.h
 *.orig
 *.o
 *.patch
-.sabr
+.FBOL
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-sabr-qt
+FBOL-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

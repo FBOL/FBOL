@@ -1,16 +1,16 @@
-TOR SUPPORT IN SABR
+TOR SUPPORT IN FBOL
 ======================
 
-It is possible to run SABR as a Tor hidden service, and connect to such services.
+It is possible to run FBOL as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on a random port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort) for how to properly
 configure Tor.
 
 
-1. Run SABR behind a Tor proxy
+1. Run FBOL behind a Tor proxy
 ---------------------------------
 
-The first step is running SABR behind a Tor proxy. This will already make all
+The first step is running FBOL behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -31,27 +31,27 @@ outgoing connections be anonymized, but more is possible.
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./SABR -proxy=127.0.0.1:9050
+	./FBOL -proxy=127.0.0.1:9050
 
 
-2. Run a SABR hidden server
+2. Run a FBOL hidden server
 ------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file):
 
-	HiddenServiceDir /var/lib/tor/SABR-service/
-	HiddenServicePort SABRSABR 127.0.0.1:1331
-	HiddenServicePort SABRSABR0 127.0.0.1:13310
+	HiddenServiceDir /var/lib/tor/FBOL-service/
+	HiddenServicePort FBOLFBOL 127.0.0.1:2121
+	HiddenServicePort FBOLFBOL0 127.0.0.1:21210
 
 The directory can be different of course, but (both) port numbers should be equal to
-your SABRd's P2P listen port (1331 by default, 13310 by default for testnet).
+your FBOLd's P2P listen port (2121 by default, 21210 by default for testnet).
 
-	-externalip=X   You can tell SABR about its publicly reachable address using
+	-externalip=X   You can tell FBOL about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/SABR-service/hostname. Onion addresses are given
+	                /var/lib/tor/FBOL-service/hostname. Onion addresses are given
 	                preference for your node to advertize itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -68,17 +68,17 @@ your SABRd's P2P listen port (1331 by default, 13310 by default for testnet).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-	./SABRd -proxy=127.0.0.1:9050 -externalip=youraddress.onion -listen
+	./FBOLd -proxy=127.0.0.1:9050 -externalip=youraddress.onion -listen
 
 (obviously, replace the Onion address with your own). If you don't care too much
 about hiding your node, and want to be reachable on IPv4 as well, additionally
 specify:
 
-	./SABRd ... -discover
+	./FBOLd ... -discover
 
-and open port SABRSABR on your firewall.
+and open port FBOLFBOL on your firewall.
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./SABR -onion=127.0.0.1:9050 -externalip=youraddress.onion -discover
+	./FBOL -onion=127.0.0.1:9050 -externalip=youraddress.onion -discover

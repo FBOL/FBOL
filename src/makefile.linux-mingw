@@ -104,7 +104,7 @@ OBJS= \
     obj/cryptogram.o \
     obj/ipcollector.o
 
-all: SABRd.exe
+all: FBOLd.exe
 
 #
 # LevelDB support
@@ -167,12 +167,12 @@ DEFS += -DHAVE_BUILD_INFO
 obj/%.o: %.cpp $(HEADERS)
 	$(CXX) -c $(CFLAGS) -o $@ $<
 
-SABRd.exe: $(OBJS:obj/%=obj/%)
+FBOLd.exe: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) -lshlwapi
-	$(STRIP) SABRd.exe
+	$(STRIP) FBOLd.exe
 
 clean:
-	-rm -f SABRd.exe
+	-rm -f FBOLd.exe
 	-rm -f obj/*.o
 	-rm -f obj/*.P
 	-rm -f obj/*.d

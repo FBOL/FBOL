@@ -67,9 +67,9 @@ void OptionsModel::Init()
         if(fTestNet)
             settings.setValue("strThirdPartyTxUrls", "");
         else
-            settings.setValue("strThirdPartyTxUrls", "https://bchain.info/SABR/tx/%s");
+            settings.setValue("strThirdPartyTxUrls", "");
     }
-    strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "https://bchain.info/SABR/tx/%s").toString();
+    strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
     fMinimizeToTray = settings.value("fMinimizeToTray", false).toBool();
     fMinimizeOnClose = settings.value("fMinimizeOnClose", false).toBool();
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();

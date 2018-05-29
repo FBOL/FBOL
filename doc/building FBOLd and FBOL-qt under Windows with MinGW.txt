@@ -142,12 +142,12 @@ mingw32-make
 Будем хранить исходники в папке C:\MyProjects
 
 3.1 Скачиваем исходники
--Зайдите на сайт https://github.com/SABR-1331/SABR 
+-Зайдите на сайт https://github.com/FBOL/FBOL 
 -Нажмите Download ZIP
--Распакуйте SABR-master.zip в C:\MyProjects
+-Распакуйте FBOL-master.zip в C:\MyProjects
 
-3.2 Собираем 42d 
--Перейдите в папку C:\MyProjects\SABR-master\src
+3.2 Собираем FBOLd 
+-Перейдите в папку C:\MyProjects\FBOL-master\src
 -Откройте файл makefile.mingw в текстовом редакторе.(При написании инструкции использовался WordPad)
 -Добавьте  строчку USE_ASM:=1
 -Если вы хотите использовать LevelDB как базу блоков то измените:
@@ -160,9 +160,9 @@ USE_LEVELDB:=1
 
 -Откройте MinGW shell (C:\MinGW\msys\1.0\msys.bat) и выполните следующий код:
 
-cd /c/MyProjects/SABR-master/src
+cd /c/MyProjects/FBOL-master/src
 make -f makefile.mingw
-strip 42d.exe
+strip FBOLd.exe
 
 Если у вас возникает ошибка "make: cc: Command not found", то поменяйте в файле makefile.mingw
 
@@ -170,18 +170,18 @@ strip 42d.exe
 на
  gcc -c $(xCXXFLAGS) -MMD -o $@ $<
 
-Если всё сделано правильно, то файл 42d.exe будет находится в папке C:\MyProjects\SABR-master\src 
+Если всё сделано правильно, то файл FBOLd.exe будет находится в папке C:\MyProjects\FBOL-master\src 
 
 
-3.3 Собираем SABR QT
+3.3 Собираем FBOL QT
 
-Внимание: Если вы хотите собирать SABR Qt с LevelDB, но пропустили шаг со сборкой 42d.exe, то 
+Внимание: Если вы хотите собирать FBOL Qt с LevelDB, но пропустили шаг со сборкой FBOLd.exe, то 
 -Откройте MinGW shell (C:\MinGW\msys\1.0\msys.bat) и выполните следующий код:
 
-cd /c/myprojects/SABR-master/src/leveldb
+cd /c/myprojects/FBOL-master/src/leveldb
 TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 
--Откройте файл C:\MyProjects\SABR-master\SABR-qt.pro в текстовом редакторе(при написании инструкции использовался WordPad)
+-Откройте файл C:\MyProjects\FBOL-master\FBOL-qt.pro в текстовом редакторе(при написании инструкции использовался WordPad)
 -Ниже 
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
@@ -219,52 +219,52 @@ windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX -Wl,-Bstatic -lpthread -Wl,-Bdy
 на
 windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
 
--Сохраните измененный файл SABR-qt.pro
+-Сохраните измененный файл FBOL-qt.pro
 -Откройте командную строку Windows и выполните следующий код:
 
 Qt5 + транзакционный индекс BDB 
 
 set PATH=%PATH%;C:\Qt\5.4.0\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_ASM=1" SABR-qt.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_ASM=1" FBOL-qt.pro
 mingw32-make -f Makefile.Release
 
 
 Qt5 + транзакционный индекс LevelDB
 
 set PATH=%PATH%;C:\Qt\5.4.0\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" SABR-qt.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" FBOL-qt.pro
 mingw32-make -f Makefile.Release
 
 Qt4 + транзакционный индекс BDB
 
 set PATH=%PATH%;C:\Qt\4.8.7\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_ASM=1" SABR-qt.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_ASM=1" FBOL-qt.pro
 mingw32-make -f Makefile.Release
 
 Qt4 + транзакционный индекс LevelDB
 
 set PATH=%PATH%;C:\Qt\4.8.7\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" SABR-qt.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" FBOL-qt.pro
 mingw32-make -f Makefile.Release
 
 
 
-Если всё сделано правильно, то файл SABR-qt.exe будет находится в папке C:\MyProjects\SABR-master\release
+Если всё сделано правильно, то файл FBOL-qt.exe будет находится в папке C:\MyProjects\FBOL-master\release
 
 Если вы хотите уменьшить размер бинарных файлов, то
 1) Перейдите на сайт http://upx.sourceforge.net/#downloadupx
 2) Скачайте программу в соответсвии с вашей системой
-3) Распакуйте программу в папку с бинарными SABR файлами.
+3) Распакуйте программу в папку с бинарными FBOL файлами.
 4) Введите в консоли
-upx -9 42d.exe
+upx -9 FBOLd.exe
 затем
-upx -9 SABR-qt.exe
+upx -9 FBOL-qt.exe
 
-И ваши 42d и SABR-qt станут меньше ~ в 3 раза.
+И ваши FBOLd и FBOL-qt станут меньше ~ в 3 раза.
 
 
 
@@ -368,7 +368,7 @@ mingw32-make
 
 3.1 Так же как 32 bit
 
-3.2 Собираем 42d 
+3.2 Собираем FBOLd 
 -Измените makefile.mingw так же как в 32 bit
 -Откройте файл makefile.mingw в текстовом редакторе и сохраните его как makefile.ming64
 -Измените в INCLUDEPATHS и LIBPATHS /c/deps/ на /c/deps/x64/
@@ -376,39 +376,39 @@ mingw32-make
 LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static 
 на 
 LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,-static, -static-libgcc
--Удалите (если они есть)obj(.o) файлы из C:\MyProjects\SABR-master\src\obj , если остались после 32 bit
--Удалите (если они есть)libleveldb.a и libmemenv.a в папке C:\MyProjects\SABR-master\src\leveldb
+-Удалите (если они есть)obj(.o) файлы из C:\MyProjects\FBOL-master\src\obj , если остались после 32 bit
+-Удалите (если они есть)libleveldb.a и libmemenv.a в папке C:\MyProjects\FBOL-master\src\leveldb
 -Удалите (если они есть)obj(.o) файлы из 
-C:\MyProjects\SABR-master\src\leveldb\db 
-C:\MyProjects\SABR-master\src\leveldb\helpers\memenv
-C:\MyProjects\SABR-master\src\leveldb\port
-C:\MyProjects\SABR-master\src\leveldb\table
-C:\MyProjects\SABR-master\src\leveldb\util
+C:\MyProjects\FBOL-master\src\leveldb\db 
+C:\MyProjects\FBOL-master\src\leveldb\helpers\memenv
+C:\MyProjects\FBOL-master\src\leveldb\port
+C:\MyProjects\FBOL-master\src\leveldb\table
+C:\MyProjects\FBOL-master\src\leveldb\util
 -Откройте MinGW shell (C:\MinGW\msys\1.0\msys.bat) и выполните следующий код:
 
-cd /c/MyProjects/SABR-master/src
+cd /c/MyProjects/FBOL-master/src
 make -f makefile.mingw64
-strip 42d.exe
+strip FBOLd.exe
 
-Если всё сделано правильно, то файл 42d.exe будет находится в папке C:\MyProjects\SABR-master\src 
+Если всё сделано правильно, то файл FBOLd.exe будет находится в папке C:\MyProjects\FBOL-master\src 
 
 
-3.3 Собираем SABR QT
-Внимание: Если вы хотите собирать SABR Qt с LevelDB, но пропустили шаг со сборкой 42d.exe, то 
--Удалите (если они есть)libleveldb.a и libmemenv.a в папке C:\MyProjects\SABR-master\src\leveldb
+3.3 Собираем FBOL QT
+Внимание: Если вы хотите собирать FBOL Qt с LevelDB, но пропустили шаг со сборкой FBOLd.exe, то 
+-Удалите (если они есть)libleveldb.a и libmemenv.a в папке C:\MyProjects\FBOL-master\src\leveldb
 -Удалите (если они есть)obj(.o) файлы из 
-C:\MyProjects\SABR-master\src\leveldb\db 
-C:\MyProjects\SABR-master\src\leveldb\helpers\memenv
-C:\MyProjects\SABR-master\src\leveldb\port
-C:\MyProjects\SABR-master\src\leveldb\table
-C:\MyProjects\SABR-master\src\leveldb\util
+C:\MyProjects\FBOL-master\src\leveldb\db 
+C:\MyProjects\FBOL-master\src\leveldb\helpers\memenv
+C:\MyProjects\FBOL-master\src\leveldb\port
+C:\MyProjects\FBOL-master\src\leveldb\table
+C:\MyProjects\FBOL-master\src\leveldb\util
 -Откройте MinGW shell (C:\MinGW\msys\1.0\msys.bat) и выполните следующий код:
 
-cd /c/myprojects/SABR-master/src/leveldb
+cd /c/myprojects/FBOL-master/src/leveldb
 TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 
--Измените файл SABR-qt.pro так же как в 32 bit
--Откройте файл SABR-qt.pro в текстовом редакторе и сохраните его как SABR-qt64.pro
+-Измените файл FBOL-qt.pro так же как в 32 bit
+-Откройте файл FBOL-qt.pro в текстовом редакторе и сохраните его как FBOL-qt64.pro
 -Замените в INCLUDE и LIB путях текст C:/deps на текст C:/deps/x64 (то есть вместо C:/deps/boost_1_57_0 нужно C:/deps/x64/boost_1_57_0 и т.д.)
 -Замените 
 win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static 
@@ -420,41 +420,41 @@ win32:QMAKE_LFLAGS *= -Wl,-static
 Qt5 + транзакционный индекс BDB 
 
 set PATH=%PATH%;C:\Qt\5.4.0-x64\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_ASM=1" SABR-qt64.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_ASM=1" FBOL-qt64.pro
 mingw32-make -f Makefile.Release
 
 
 Qt5 + транзакционный индекс LevelDB
 
 set PATH=%PATH%;C:\Qt\5.4.0-x64\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" SABR-qt64.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" FBOL-qt64.pro
 mingw32-make -f Makefile.Release
 
 Qt4 + транзакционный индекс BDB
 
 set PATH=%PATH%;C:\Qt\4.8.7-x64\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_ASM=1" SABR-qt64.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_ASM=1" FBOL-qt64.pro
 mingw32-make -f Makefile.Release
 
 Qt4 + транзакционный индекс LevelDB
 
 set PATH=%PATH%;C:\Qt\4.8.7-x64\bin
-cd C:\MyProjects\SABR-master
-qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" SABR-qt64.pro
+cd C:\MyProjects\FBOL-master
+qmake "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" FBOL-qt64.pro
 mingw32-make -f Makefile.Release
 
-Если всё сделано правильно, то файл SABR-qt.exe будет находится в папке C:\MyProjects\SABR-master\release
+Если всё сделано правильно, то файл FBOL-qt.exe будет находится в папке C:\MyProjects\FBOL-master\release
 
 Если вы хотите уменьшить размер бинарных файлов, то
 1) Перейдите на сайт http://upx.sourceforge.net/#downloadupx
 2) Скачайте программу в соответсвии с вашей системой
-3) Распакуйте программу в папку с бинарными SABR файлами.
+3) Распакуйте программу в папку с бинарными FBOL файлами.
 4) Введите в консоли
-upx -9 42d.exe
+upx -9 FBOLd.exe
 затем
-upx -9 SABR-qt.exe
+upx -9 FBOL-qt.exe
 
-И ваши 42d и SABR-qt станут меньше ~ в 3 раза.
+И ваши FBOLd и FBOL-qt станут меньше ~ в 3 раза.

@@ -1,4 +1,4 @@
-Name SABR
+Name FBOL
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,11 +6,11 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.3.0
-!define URL http://www.sabr-coin.tk/
-!define COMPANY "SABR-coin"
+!define URL http://www.FBOL-coin.tk/
+!define COMPANY "FBOL-coin"
 
 # MUI Symbol Definitions
-!define MUI_ICON "../share/pixmaps/SABR.ico"
+!define MUI_ICON "../share/pixmaps/FBOL.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
@@ -19,8 +19,8 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER SABR
-#!define MUI_FINISHPAGE_RUN $INSTDIR\SABR-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER FBOL
+#!define MUI_FINISHPAGE_RUN $INSTDIR\FBOL-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -45,14 +45,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile SABR-0.3.0-win32-setup.exe
-InstallDir $PROGRAMFILES\SABR
+OutFile FBOL-0.3.0-win32-setup.exe
+InstallDir $PROGRAMFILES\FBOL
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion 0.3.0.0
-VIAddVersionKey ProductName SABR
+VIAddVersionKey ProductName FBOL
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -66,18 +66,18 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    #File ../release/SABR-qt.exe
+    #File ../release/FBOL-qt.exe
     File /oname=license.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File ../src/SABRd.exe
+    File ../src/FBOLd.exe
     SetOutPath $INSTDIR\src
     File /r /x *.exe /x *.o ../src\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
-    # Remove old wxwidgets-based-SABR executable and locales:
-    #Delete /REBOOTOK $INSTDIR\SABR.exe
+    # Remove old wxwidgets-based-FBOL executable and locales:
+    #Delete /REBOOTOK $INSTDIR\FBOL.exe
     #RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
@@ -87,7 +87,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall SABR.lnk" $INSTDIR\uninstall.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall FBOL.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
@@ -98,11 +98,11 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
 
-    # SABR: URI handling disabled for 0.6.0
-    #    WriteRegStr HKCR "SABR" "URL Protocol" ""
-    #    WriteRegStr HKCR "SABR" "" "URL:SABR"
-    #    WriteRegStr HKCR "SABR\DefaultIcon" "" $INSTDIR\SABR-qt.exe
-    #    WriteRegStr HKCR "SABR\shell\open\command" "" '"$INSTDIR\SABR-qt.exe" "$$1"'
+    # FBOL: URI handling disabled for 0.6.0
+    #    WriteRegStr HKCR "FBOL" "URL Protocol" ""
+    #    WriteRegStr HKCR "FBOL" "" "URL:FBOL"
+    #    WriteRegStr HKCR "FBOL\DefaultIcon" "" $INSTDIR\FBOL-qt.exe
+    #    WriteRegStr HKCR "FBOL\shell\open\command" "" '"$INSTDIR\FBOL-qt.exe" "$$1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -120,7 +120,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    #Delete /REBOOTOK $INSTDIR\SABR-qt.exe
+    #Delete /REBOOTOK $INSTDIR\FBOL-qt.exe
     Delete /REBOOTOK $INSTDIR\license.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -130,9 +130,9 @@ SectionEnd
 
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall SABR.lnk"
-    #Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\SABR.lnk"
-    #Delete /REBOOTOK "$SMSTARTUP\SABR.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall FBOL.lnk"
+    #Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\FBOL.lnk"
+    #Delete /REBOOTOK "$SMSTARTUP\FBOL.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -140,7 +140,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "SABR"
+    DeleteRegKey HKCR "FBOL"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

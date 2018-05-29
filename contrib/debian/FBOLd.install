@@ -1,0 +1,2 @@
+debian/bin/FBOLd usr/bin
+src/FBOLd usr/lib/FBOL

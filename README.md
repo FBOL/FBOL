@@ -1,25 +1,22 @@
-[![SABR-256.png](http://i63.tinypic.com/ae391c.jpg)](https://sabr-coin.com)
-
-
-SABR - a PoS/PoW based cryptocurrency.
+FBOL - a PoS/PoW based cryptocurrency.
 		
 Specifications
 --------------
 
-- Max money: 133100000 coins
+- Total Supply: 3000000000 coins (after 10+ years)
 - Transaction confirmation method: PoS + PoW
 - Transaction type: public & private
 - Number of transaction confirmation: 7
-- Number of block confirmation: 133
+- Number of block confirmation: 120
 - PoS reward: 0 coin & destroy tx fees (for deflation)
-- Min stake age: 133 hours
+- Min stake age: 2 days
 - Max stake age: unlimited
-- PoS target spacing: 10 minutes
+- PoS target spacing: 5 minutes
 - PoW algo type: Scrypt
-- PoW reward: 0 coin + tx fees
-- PoW target spacing: 30 minutes
-- Default Listen Port: 1331 (13310 for testnet)
-- JSON-RPC Port: 2662 (26620 for testnet)
+- PoW reward: 5000 coin + tx fees
+- PoW target spacing: 15 minutes
+- Default Listen Port: 2121 (21210 for testnet)
+- JSON-RPC Port: 9562 (95620 for testnet)
 
 
 Development process
@@ -35,7 +32,7 @@ or are controversial.
 
 The master branch is regularly built and tested, but is not guaranteed
 to be completely stable. Tags are regularly created to indicate new
-official, stable release versions of SABR.
+official, stable release versions of FBOL.
 
 Feature branches are created when there are major new features being
 worked on by several people.

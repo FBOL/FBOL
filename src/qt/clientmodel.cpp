@@ -88,7 +88,7 @@ QDateTime ClientModel::getLastBlockDate() const
     if (pindexBest)
         return QDateTime::fromTime_t(pindexBest->GetBlockTime());
     else
-        return QDateTime::fromTime_t(1510488000); // Genesis block's time
+        return QDateTime::fromTime_t(1527613800); // Genesis block's time
 }
 
 void ClientModel::updateTimer()

@@ -1,11 +1,11 @@
 [Unit]
-Description=SABR daemon serivce
+Description=FBOL daemon serivce
 After=network.target
 
 [Service]
 Type=simple
-User=SABR
-ExecStart=/opt/SABR/SABRd
+User=FBOL
+ExecStart=/opt/FBOL/FBOLd
 
 [Install]
 WantedBy=multi-user.target

@@ -131,9 +131,9 @@ Using Qt version 5.8.0 in /home/<ваше имя>/mxe/usr/i686-w64-mingw32.stati
 -Перейдите в домашнюю папку
 -Откройте терминал:
 
-git clone https://github.com/SABR-1331/SABR.git
+git clone https://github.com/FBOL/FBOL.git
 
-3.2 Собираем 42d 
+3.2 Собираем FBOLd 
 -Откройте файл makefile.mingw в текстовом редакторе (например, Pluma, gedit)
 -Замените CC=gcc на 
 CC=$(CROSS)gcc
@@ -181,7 +181,7 @@ USE_LEVELDB:=0
 на
 USE_LEVELDB:=1
 (выше USE_IPV6:=1)
-Откройте файл /home/<ваше имя>/SABR/src/leveldb/Makefile
+Откройте файл /home/<ваше имя>/FBOL/src/leveldb/Makefile
 Вставьте ниже строчки CXXFLAGS += -I. -I./include $(PLATFORM_CXXFLAGS) $(OPT) следующие строки:
 
 CC=$(CROSS)gcc
@@ -197,14 +197,14 @@ cd leveldb; TARGET_OS=NATIVE_WINDOWS make CROSS=i686-w64-mingw32.static- libleve
 
 Измените
 clean:
-	-del /Q 42d.exe
+	-del /Q FBOLd.exe
 	-del /Q obj\*
 	-del /Q crypto\scrypt\asm\obj\*
 
 на
 
 clean:
-	-rm 42d.exe
+	-rm FBOLd.exe
 	-rm obj/*
 	-rm crypto/scrypt/asm/obj/*
 
@@ -212,24 +212,24 @@ clean:
 
 -Откройте терминал:
 
-cd /home/<ваше имя>/SABR/src
+cd /home/<ваше имя>/FBOL/src
 export PATH=/home/<ваше имя>/mxe/usr/bin:$PATH
 make -j n CROSS=i686-w64-mingw32.static- -f makefile.mingw (вместо n количество ядер вашего процессора, которые вы хотите выделить под сборку)
-strip 42d.exe
+strip FBOLd.exe
 
-Если всё сделано правильно, то файл 42d.exe будет находится в папке /home/<ваше имя>/SABR/src.
+Если всё сделано правильно, то файл FBOLd.exe будет находится в папке /home/<ваше имя>/FBOL/src.
 
-3.3 Собираем SABR QT
+3.3 Собираем FBOL QT
 
-Внимание: Если вы хотите собирать SABR Qt с LevelDB, но пропустили шаг со сборкой 42d.exe, то 
+Внимание: Если вы хотите собирать FBOL Qt с LevelDB, но пропустили шаг со сборкой FBOLd.exe, то 
 -Измените Makefile в папке leveldb также как в пункте 3.2
 -Откройте терминал:
 
 export PATH=/home/<ваше имя>/mxe/usr/bin:$PATH
-cd /home/<ваше имя>/SABR/src/leveldb
+cd /home/<ваше имя>/FBOL/src/leveldb
 TARGET_OS=NATIVE_WINDOWS make CROSS=i686-w64-mingw32.static- libleveldb.a libmemenv.a
 
--Откройте файл /home/<ваше имя>/SABR/SABR-qt.pro в текстовом редакторе (например, Pluma, gedit)
+-Откройте файл /home/<ваше имя>/FBOL/FBOL-qt.pro в текстовом редакторе (например, Pluma, gedit)
 -Ниже 
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
@@ -264,46 +264,46 @@ win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe
 на
 win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]/lrelease
 
--Сохраните измененный файл SABR-qt.pro
+-Сохраните измененный файл FBOL-qt.pro
 -Откройте терминал и выполните следующие команды:
 
 Qt4 + транзакционный индекс LevelDB
 
 export PATH=/home/<ваше имя>/mxe/usr/bin:$PATH
-cd /home/<ваше имя>/SABR
-i686-w64-mingw32.static-qmake-qt4 "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" SABR-qt.pro
+cd /home/<ваше имя>/FBOL
+i686-w64-mingw32.static-qmake-qt4 "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" FBOL-qt.pro
 make -j n -f Makefile.Release  (вместо n количество ядер вашего процессора, которые вы хотите выделить под сборку)
 
 Qt4 + транзакционный индекс BDB
 
 export PATH=/home/<ваше имя>/mxe/usr/bin:$PATH
-cd /home/<ваше имя>/SABR
-i686-w64-mingw32.static-qmake-qt4 "USE_IPV6=1" "USE_ASM=1" SABR-qt.pro
+cd /home/<ваше имя>/FBOL
+i686-w64-mingw32.static-qmake-qt4 "USE_IPV6=1" "USE_ASM=1" FBOL-qt.pro
 make -j n -f Makefile.Release  (вместо n количество ядер вашего процессора, которые вы хотите выделить под сборку)
 
 Qt5 + транзакционный индекс LevelDB
 
 export PATH=/home/<ваше имя>/mxe/usr/bin:$PATH
-cd /home/<ваше имя>/SABR
-i686-w64-mingw32.static-qmake-qt5 "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" SABR-qt.pro
+cd /home/<ваше имя>/FBOL
+i686-w64-mingw32.static-qmake-qt5 "USE_IPV6=1" "USE_LEVELDB=1" "USE_ASM=1" FBOL-qt.pro
 make -j n -f Makefile.Release  (вместо n количество ядер вашего процессора, которые вы хотите выделить под сборку)
 
 Qt5 + транзакционный индекс BDB
 
 export PATH=/home/<ваше имя>/mxe/usr/bin:$PATH
-cd /home/<ваше имя>/SABR
-i686-w64-mingw32.static-qmake-qt5 "USE_IPV6=1" "USE_ASM=1" SABR-qt.pro
+cd /home/<ваше имя>/FBOL
+i686-w64-mingw32.static-qmake-qt5 "USE_IPV6=1" "USE_ASM=1" FBOL-qt.pro
 make -j n -f Makefile.Release  (вместо n количество ядер вашего процессора, которые вы хотите выделить под сборку)
 
-Если всё сделано правильно, то файл SABR-qt.exe будет находится в папке /home/<ваше имя>/SABR/release.
+Если всё сделано правильно, то файл FBOL-qt.exe будет находится в папке /home/<ваше имя>/FBOL/release.
 
 Если вы хотите уменьшить размер бинарных файлов, то
 1) Перейдите на сайт http://upx.sourceforge.net/#downloadupx
 2) Скачайте программу в соответсвии с вашей системой
-3) Распакуйте программу в папку с бинарными SABR файлами.
+3) Распакуйте программу в папку с бинарными FBOL файлами.
 4) Введите в терминале
-./upx -9 42d.exe
+./upx -9 FBOLd.exe
 затем
-./upx -9 SABR-qt.exe
+./upx -9 FBOL-qt.exe
 
-И ваши 42d и SABR-qt станут меньше ~ в 3 раза.
+И ваши FBOLd и FBOL-qt станут меньше ~ в 3 раза.

@@ -106,7 +106,7 @@ ifneq (${USE_IPV6}, -)
 	DEFS += -DUSE_IPV6=$(USE_IPV6)
 endif
 
-all: SABRd
+all: FBOLd
 
 #
 # LevelDB support
@@ -171,11 +171,11 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-SABRd: $(OBJS:obj/%=obj/%)
+FBOLd: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
-	-rm -f SABRd
+	-rm -f FBOLd
 	-rm -f obj/*.o
 	-rm -f obj/*.P
 	-rm -f obj/*.d

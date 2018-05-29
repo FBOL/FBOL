@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# PROVIDE: FBOL
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# FBOL_enable (bool): Set to NO by default. Set this variable to YES if you want to enable FBOL service.
+# FBOL_config (path): Set to /usr/local/etc/FBOL.conf by default.
+# FBOL_user:  The user account FBOL daemon runs as. It uses 'root' user by default.
+# FBOL_group: The group account FBOL daemon runs as. It uses 'wheel' group by default.
+# FBOL_datadir (str): Default to "/var/db/FBOL". Base data directory.
+
+. /etc/rc.subr
+
+name=FBOL
+rcvar=FBOL_enable
+
+: ${FBOL_enable:=NO}
+: ${FBOL_config=/usr/local/etc/FBOL.conf}
+: ${FBOL_datadir=/var/db/FBOL}
+: ${FBOL_user="root"}
+: ${FBOL_group="wheel"}
+
+required_files=${FBOL_config}
+command=/usr/local/bin/FBOLd
+FBOL_chdir=${FBOL_datadir}
+pidfile="${FBOL_datadir}/FBOLd.pid"
+stop_cmd=FBOL_stop
+command_args="-conf=${FBOL_config} -datadir=${FBOL_datadir} -daemon -pid=${pidfile}"
+start_precmd="${name}_prestart"
+
+FBOL_create_datadir()
+{
+	echo "Creating data directory"
+	eval mkdir -p ${FBOL_datadir}
+	[ $? -eq 0 ] && chown -R ${FBOL_user}:${FBOL_group} ${FBOL_datadir}
+}
+
+FBOL_prestart()
+{
+	if [ ! -d "${FBOL_datadir}/." ]; then
+		FBOL_create_datadir || return 1
+	fi
+}
+
+FBOL_requirepidfile()
+{
+	if [ ! "0`check_pidfile ${pidfile} ${command}`" -gt 1 ]; then
+		echo "${name} not running? (check $pidfile)."
+		exit 1
+	fi
+}
+
+FBOL_stop()
+{
+    FBOL_requirepidfile
+
+	echo "Stopping ${name}."
+	eval ${command} -conf=${FBOL_config} -datadir=${FBOL_datadir} stop
+	wait_for_pids ${rc_pid}
+}
+
+load_rc_config $name
+run_rc_command "$1"

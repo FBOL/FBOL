@@ -1,5 +1,0 @@
-SABR-qt usr/bin
-share/pixmaps/SABR32.xpm usr/share/pixmaps
-share/pixmaps/SABR80.xpm usr/share/pixmaps
-debian/SABR-qt.desktop usr/share/applications
-debian/SABR-qt.protocol usr/share/kde4/services/

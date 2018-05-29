@@ -1,9 +1,9 @@
-Building SABR
+Building FBOL
 
-See doc/readme-qt.rst for instructions on building SABR Qt,
+See doc/readme-qt.rst for instructions on building FBOL-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of SABR.
+implementation of FBOL.
 
-See doc/build-*.txt for instructions on building SABRd,
+See doc/build-*.txt for instructions on building FBOLd,
 the intended-for-services, no-graphical-interface, reference
-implementation of SABR.
+implementation of FBOL.

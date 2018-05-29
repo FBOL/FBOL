@@ -1,6 +1,6 @@
-# Dockerfile for building SABR binaries.
+# Dockerfile for building FBOL binaries.
 
-Now, you can build your own SABR files on all systems with docker and do it easy without installing depends on your system.
+Now, you can build your own FBOL files on all systems with docker and do it easy without installing depends on your system.
 
 ## How:
 
@@ -17,13 +17,13 @@ Example:
 Successfully built 9bbff825d50f
 
 ```
-sudo docker run -it -v ~/path/to/SABR/folder:/SABR 9bbff825d50f
+sudo docker run -it -v ~/path/to/FBOL/folder:/FBOL 9bbff825d50f
 ```
 
 If your system uses SELINUX you may use --privileged=true key
 
 ```
-sudo docker run --privileged=true -it -v ~/development/SABR:/SABR 9bbff825d50f
+sudo docker run --privileged=true -it -v ~/development/FBOL:/FBOL 9bbff825d50f
 ```
 
-See SABR-qt file in used SABR folder and SABRd file in src subfolder.
+See FBOL-qt file in used FBOL folder and FBOLd file in src subfolder.

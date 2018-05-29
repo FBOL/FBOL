@@ -84,7 +84,7 @@ void QRCodeDialog::genCode()
 
 QString QRCodeDialog::getURI()
 {
-    QString ret = QString("SABR:%1").arg(address);
+    QString ret = QString("FBOL:%1").arg(address);
     int paramCount = 0;
 
     ui->outUri->clear();

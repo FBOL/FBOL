@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=FBOL
+Comment=FBOL P2P Cryptocurrency
+Comment[ru]=FBOL, P2P криптовалюта
+Comment[fr]=FBOL, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=FBOL, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/FBOL-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/FBOL80.xpm
+MimeType=x-scheme-handler/FBOL;
+Categories=Office;

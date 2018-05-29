@@ -64,14 +64,14 @@ const std::string CLIENT_NAME("Satoshi");
 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "674830b"
+#define GIT_COMMIT_ID "671749b"
 #endif
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,commit) \
-    "SABR-v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-g" commit
+    "FBOL-v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-g" commit
 
 #define BUILD_DESC_FROM_UNKNOWN(maj,min,rev) \
-    "SABR-v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-unk"
+    "FBOL-v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-unk"
 
 #ifndef BUILD_DESC
 #    ifdef GIT_COMMIT_ID
