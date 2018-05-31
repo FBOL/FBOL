@@ -7,7 +7,7 @@ inherit db-use eutils fdo-mime gnome2-utils kde4-functions qt4-r2
 DB_VER="4.8"
 
 DESCRIPTION="FBOL - a hybrid PoW+PoS energy efficient p2p-cryptocurrency and electronic payment system."
-SRC_URI="https://github.com/${PN}-coin/${PN}/archive/FBOL-v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
+SRC_URI="https://github.com/${PN}/${PN}/archive/FBOL-v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
