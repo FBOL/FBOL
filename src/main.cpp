@@ -1008,7 +1008,6 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     else if (pindexBest->nHeight >= 5)
         nSubsidy = 5000 * COIN;
 	
-
 	if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%" PRId64 "\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
 	
@@ -2693,7 +2692,6 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = !fTestNet ? 1843390 : 122791;
 		
-
         //// debug print
         assert(block.hashMerkleRoot == uint256("0xf641efbf77c65955b1579392e904cca070683049276efadbad960de0949c88c6"));
         block.print();
