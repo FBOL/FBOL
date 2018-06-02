@@ -541,9 +541,9 @@ int64_t CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree, enum G
 
     if(IsCoinStake())
     {
-        // Enforce 0.001 as minimum fee for coinstake
-        nMinTxFee = CENT/10;
-        nMinRelayTxFee = CENT/10;
+        // Enforce 0.00000001 as minimum fee for coinstake
+        nMinTxFee = 1;
+        nMinRelayTxFee = 1;
     }
 
     // Base fee is either nMinTxFee or nMinRelayTxFee
