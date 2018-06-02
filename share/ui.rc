@@ -1,4 +1,4 @@
-SABR               ICON    "pixmaps/SABR.ico"
+FBOL               ICON    "pixmaps/FBOL.ico"
 
 #include "wx/msw/wx.rc"
 
