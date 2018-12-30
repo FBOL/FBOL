@@ -4101,12 +4101,12 @@ If the file does not exist, create it with owner-readable-only file permissions.
     <message>
         <location filename="../bitcoinstrings.cpp" line="107"/>
         <source>Importing blockchain data file.</source>
-        <translation>Імпорт з файлу даних ланцюжки блоків.</translation>
+        <translation>Імпорт з файлу даних ланцюга блоків.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="108"/>
         <source>Importing bootstrap blockchain data file.</source>
-        <translation>Початкове завантаження ланцюжки блоків.</translation>
+        <translation>Початкове завантаження ланцюга блоків.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="109"/>
